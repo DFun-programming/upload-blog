@@ -1,0 +1,6 @@
+.border-gradient-green-to-blue {
+    border-image: linear-gradient(to right, #48bb78, #3490dc);
+    border-image-slice: 1;
+    border-radius: 20px;
+    border-width: 10px;
+  }
