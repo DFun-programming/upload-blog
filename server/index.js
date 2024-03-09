@@ -57,9 +57,11 @@ app.use('/api/v1/user', userRouter);
 
 app.use(express.static(path.join(__dirname,'/react-client/dist')));
 
+
 app.get('*',(req,res)=>{
 	res.sendFile(path.join(__dirname,'react-client','dist','index.html'));
 })
+
 // Testing the server
 app.get("/", (req, res) => {
 	return res.json({
