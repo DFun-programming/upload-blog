@@ -91,7 +91,7 @@ exports.signup = async (req, res, next) => {
       lastName,
       email,
       password: hashedPassword,
-      image: "",
+      image: `https://api.dicebear.com/5.x/initials/svg?seed=${firstName} ${lastName}`,
     });
 
     // Return success response with user details
