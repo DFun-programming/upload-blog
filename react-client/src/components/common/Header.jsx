@@ -2,6 +2,7 @@ import { Avatar, Button, Dropdown, Navbar, TextInput } from 'flowbite-react'
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FiSearch } from "react-icons/fi";
+import { MdAdd } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 import { useSelector } from 'react-redux';
 
@@ -19,10 +20,14 @@ const Header = () => {
         </Link>
        
         <div className='flex gap-2 md:order-2'>
+      {
+        currentUser && <Button className='w-12 h-10 '   color='gray' pill onClick={()=>navigate('/create-post')}>
+                <MdAdd  className='text-2xl text-slate-800 via-purple-500' />
+        </Button> 
+      }
         <Button className='w-12 h-10  ' color='gray' pill onClick={()=>navigate('/search')}>
             <FiSearch></FiSearch>
         </Button>
-      
        {
         currentUser?(<Dropdown arrowIcon={false}
         inline
