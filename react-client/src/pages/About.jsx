@@ -10,7 +10,7 @@ const About = () => {
               Who Are We?
             </h1>
             <p className="text-lg font-medium text-richblack-300 lg:w-[95%]">
-              Welcome to DOT Blog, where technology meets innovation and
+              Welcome to Blog Space, where technology meets innovation and
               inspiration. We are a passionate team dedicated to unraveling the
               complexities of the digital world and bringing you the latest
               insights, trends, and breakthroughs. Whether you're a seasoned
@@ -20,7 +20,7 @@ const About = () => {
               time.
             </p>
             <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-              At DOT Blog, drawing from our own experiences as educators, we've
+              At Blog Space, drawing from our own experiences as educators, we've
               seen the constraints and hurdles of traditional education
               firsthand. We've long held the conviction that learning should
               transcend classroom walls and geographical barriers. With this
@@ -58,7 +58,7 @@ const About = () => {
               Our Mission
             </h1>
             <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-              At DOT Blog, our mission transcends mere content delivery. We're
+              At Blog Space, our mission transcends mere content delivery. We're
               dedicated to cultivating a thriving community of avid learners,
               fostering connections, collaboration, and continuous growth. We
               firmly believe that knowledge flourishes within a supportive

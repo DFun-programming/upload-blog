@@ -1,4 +1,4 @@
-import './IconBtn.css'
+
 export default function IconBtn({
     text,
     onclick,
@@ -19,7 +19,7 @@ export default function IconBtn({
       >
         {children ? (
           <>
-            <span className={`${outline && "text-blue-700"}`}>{text}</span>
+            <span className={`text-slate-800`}>{text}</span>
             {children}
           </>
         ) : (

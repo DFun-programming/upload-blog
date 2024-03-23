@@ -24,8 +24,10 @@ exports.isError = (err, req, res, next) => {
 };
 exports.isAuth=async(req,res,next)=>{
   try {
-    // Extracting JWT from request cookies, body or header
-		const token = req.header("Authorization").replace("Bearer ", "");
+    // Extracting JWT from request cookies, or header
+		const token =req.cookies.access_token
+		console.log("token : ",token);
+		// || req.header("Authorization").replace("Bearer ", "");
     
     console.log(token)
 		// If JWT is missing, return 401 Unauthorized response

@@ -148,13 +148,13 @@ exports.login = async (req, res, next) => {
         }
       );
 
-      // Save token to user document in database
+      // Save token to user document 
       user.token = token;
       user.password = undefined;
 
       // Set cookie for token and return success response
       const options = {
-        expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+        expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
         httpOnly: true,
       };
       res.cookie("access-token", token, options).status(200).json({

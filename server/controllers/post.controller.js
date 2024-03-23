@@ -1,6 +1,7 @@
 // Import required modules
 const { errorHandler } = require("../utils/error");
 const Post = require("../models/Post");
+const Comment = require("../models/Comment");
 
 // Function to create a new post
 exports.createPost = async (req, res, next) => {
@@ -88,6 +89,8 @@ exports.deletepost = async (req, res, next) => {
   try {
     // Delete the post
     await Post.findByIdAndDelete(req.params.postId);
+    // Delete associated comments
+    await Comment.deleteMany({ post: req.params.postId });
     res.status(200).json({ message:'The post has been deleted', success:true });
   } catch (error) {
     next(error);

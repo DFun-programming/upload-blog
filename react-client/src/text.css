@@ -1,0 +1,12 @@
+.parent{
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.child{
+    width: 20%;
+    height: 120px;
+
+}

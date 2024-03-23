@@ -36,7 +36,7 @@ app.use(cookieParser());
 // Enable Cross-Origin Resource Sharing (CORS) for all origins with credentials support
 app.use(
 	cors({
-		origin: "*", // Allow requests from any origin
+		origin: "http://localhost:5173", // Allow requests from any origin
 		credentials: true, // Allow cookies and authorization headers
 	})
 );
